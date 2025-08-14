@@ -31,7 +31,7 @@ int main() {
     scanf("%d", &populacao1);
     printf("Área em KM²:\n");
     scanf("%f", &area1);
-    printf("PIB (Bilhões de reais)\n");
+    printf("PIB (bilhões de reais)\n");
     scanf("%f", &pib1);
     printf("Números de pontos turísticos\n");
     scanf("%d", &pontos_turisticos1);
