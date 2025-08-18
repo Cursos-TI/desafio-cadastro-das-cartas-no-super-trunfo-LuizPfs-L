@@ -78,7 +78,7 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos2);
 
-    printf("!DESAFIO NIVEL NOVATO CONCLUIDO!");
+    printf("!DESAFIO NIVEL NOVATO CONCLUIDO!\n");
 
     return 0;
 }
