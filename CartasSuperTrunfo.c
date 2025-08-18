@@ -55,6 +55,8 @@ int main() {
     printf("Números de pontos turísticos\n");
     scanf("%d", &pontos_turisticos2);
    
+    printf("Desafio novato concluído\n");
+   
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     // Exibição dos Dados das Cartas:
