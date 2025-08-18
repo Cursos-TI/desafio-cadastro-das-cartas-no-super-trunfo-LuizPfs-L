@@ -22,11 +22,11 @@ int main() {
     //Primeira carta
     printf("Digite os dados da primeira carta:\n");
     printf("Estado (A-H):");
-    scanf("%s", &estado1);
+    scanf("%s", estado1);
     printf("Código da carta:\n");
-    scanf("%s", &codigo1);
+    scanf("%s", codigo1);
     printf("Nome da cidade:\n");
-    scanf("%s", &nome_cidade1);
+    scanf("%s", nome_cidade1);
     printf("População:\n");
     scanf("%d", &populacao1);
     printf("Área em KM²:\n");
@@ -39,11 +39,11 @@ int main() {
     //Segunda carta
     printf("Digite os dados da segunda carta:\n");
     printf("Estado (A-H):");
-    scanf("%s", &estado2);
+    scanf("%s", estado2);
     printf("Código da carta:\n");
-    scanf("%s", &codigo2);
+    scanf("%s", codigo2);
     printf("Nome da cidade:\n");
-    scanf("%s", &nome_cidade2);
+    scanf("%s", nome_cidade2);
     printf("População:\n");
     scanf("%d", &populacao2);
     printf("Área em KM²:\n");
