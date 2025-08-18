@@ -8,12 +8,11 @@
 
 int main() {
     printf("Desafio Cartas Super Trunfo!\n");
-    printf("Novo commit\n");
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     char estado1[2],estado2[2];
     char codigo1[4],codigo2[4];
-    char nome_cidade1[50],nome_cidade2[50];
+    char nome_cidade1[49],nome_cidade2[49];
     int populacao1,populacao2;
     float area1,area2;
     float pib1,pib2;
@@ -25,7 +24,8 @@ int main() {
     scanf("%s", estado1);
     printf("Código da carta:\n");
     scanf("%s", codigo1);
-    printf("Nome da cidade:\n");
+    printf("Nome da cidade (digite sem espaços, use _ ou - para separar as palavras):\n");
+    printf("Exemplo: Rio_de_Janeiro ou Belo-Horizonte\n");
     scanf("%s", nome_cidade1);
     printf("População:\n");
     scanf("%d", &populacao1);
@@ -43,6 +43,8 @@ int main() {
     printf("Código da carta:\n");
     scanf("%s", codigo2);
     printf("Nome da cidade:\n");
+    printf("Nome da cidade (digite sem espaços, use _ ou - para separar as palavras):\n");
+    printf("Exemplo: Rio_de_Janeiro ou Belo-Horizonte\n");
     scanf("%s", nome_cidade2);
     printf("População:\n");
     scanf("%d", &populacao2);
