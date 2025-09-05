@@ -95,7 +95,7 @@ int main() {
 
 
     printf("!DESAFIO NIVEL NOVATO CONCLUIDO!\n");
-    printf("!DESAFIO NIVEL AVENTUREIRO CONCLUIDO!\n")
+    printf("!DESAFIO NIVEL AVENTUREIRO CONCLUIDO!\n");
 
     return 0;
 }
