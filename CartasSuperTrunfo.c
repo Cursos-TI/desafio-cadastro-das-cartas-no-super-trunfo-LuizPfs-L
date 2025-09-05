@@ -17,6 +17,8 @@ int main() {
     float area1,area2;
     float pib1,pib2;
     int pontos_turisticos1,pontos_turisticos2;
+    float DensidadePopulacional;
+    float PIBPerCapita;
     // Cadastro das Cartas:
     //Primeira carta
     printf("Digite os dados da primeira carta:\n");
