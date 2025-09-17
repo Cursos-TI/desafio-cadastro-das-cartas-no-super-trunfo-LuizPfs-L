@@ -19,8 +19,8 @@ int main() {
     int pontos_turisticos1,pontos_turisticos2;
     float densidade_populacional1,densidade_populacional2;
     float PIB_per_capita1, PIB_per_capita2;
-    float calcula_SuperPoder(unsigned long int populacao, float area, float pib, int pontos_turisticos, float densidade, float pib_per_capita);
-   
+    float SuperPoder1, SuperPoder2;
+    
     // Cadastro das Cartas:
     //Primeira carta
     printf("Digite os dados da primeira carta:\n");
@@ -105,10 +105,8 @@ int main() {
     printf("PIB per Capita: %d\n", PIB_per_capita1 > PIB_per_capita2 ? 1 : 0);
 
     // Super Poder
-    
-    float super_poder1 = calculaSuperPoder(populacao1, area1, pib1, pontos_turisticos1, densidade_populacional1, PIB_per_capita1);
-    float super_poder2 = calculaSuperPoder(populacao2, area2, pib2, pontos_turisticos2, densidade_populacional2, PIB_per_capita2);
-    printf("Super Poder: %d\n", super_poder1 > super_poder2 ? 1 : 0);
+    SuperPoder1 = (float)populacao1 + area1 + pib1 + (float)pontos_turisticos1 + PIB_per_capita1 + (1.0f / densidade_populacional1);
+    SuperPoder2 = (float)populacao2 + area2 + pib2 + (float)pontos_turisticos2 + PIB_per_capita2+ (1.0f / densidade_populacional2);
     
     
 
