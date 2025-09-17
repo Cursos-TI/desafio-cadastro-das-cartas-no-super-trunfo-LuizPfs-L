@@ -39,6 +39,7 @@ int main() {
     scanf("%f", &pib1);
     printf("Números de pontos turísticos\n");
     scanf("%d", &pontos_turisticos1);
+   
     
     //Segunda carta
     printf("Digite os dados da segunda carta:\n");
@@ -57,6 +58,7 @@ int main() {
     scanf("%f", &pib2);
     printf("Números de pontos turísticos\n");
     scanf("%d", &pontos_turisticos2);
+    
 
     //Desafio Nivel Aventureiro-Cálculos
     densidade_populacional1 = (float) populacao1 / area1;
@@ -64,6 +66,10 @@ int main() {
 
     densidade_populacional2 = (float) populacao2 / area2;
     PIB_per_capita2 = pib2 / (float) populacao2;
+
+    // Super Poder
+    SuperPoder1 = (float)populacao1 + area1 + pib1 + (float)pontos_turisticos1 + PIB_per_capita1 + (1.0f / densidade_populacional1);
+    SuperPoder2 = (float)populacao2 + area2 + pib2 + (float)pontos_turisticos2 + PIB_per_capita2+ (1.0f / densidade_populacional2);
 
    
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -82,6 +88,7 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos1);
     printf("Densidade Populacional: %.2f\n", densidade_populacional1);
     printf("PIB per Capita: %.6f\n", PIB_per_capita1);
+    printf("Super Poder: %.6f\n", SuperPoder1);
 
     
     printf("\nCarta 2:\n");
@@ -94,6 +101,7 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos2);
     printf("Densidade Populacional: %.2f\n", densidade_populacional2);
     printf("PIB per Capita: %.6f\n", PIB_per_capita2);
+    printf("Super Poder: %.6f\n", SuperPoder2);
 
     //Desafio Nivel Mestre:Comparação
     printf("\nComparação dos atributos (1 = Carta 1 vence, 0 = Carta 2 vence):\n");
@@ -101,12 +109,11 @@ int main() {
     printf("Área: %d\n", area1 > area2 ? 1 : 0);
     printf("PIB: %d\n", pib1 > pib2 ? 1 : 0);
     printf("Pontos Turísticos: %d\n", pontos_turisticos1 > pontos_turisticos2 ? 1 : 0);
-    printf("Densidade Populacional: %d\n", densidade_populacional1 > densidade_populacional2 ? 1 : 0);
+    printf("Densidade Populacional: %d\n", densidade_populacional1 < densidade_populacional2 ? 1 : 0); //Menor vence
     printf("PIB per Capita: %d\n", PIB_per_capita1 > PIB_per_capita2 ? 1 : 0);
+    printf("Super Poder: %d\n", SuperPoder1 > SuperPoder2 ? 1 : 0);
 
-    // Super Poder
-    SuperPoder1 = (float)populacao1 + area1 + pib1 + (float)pontos_turisticos1 + PIB_per_capita1 + (1.0f / densidade_populacional1);
-    SuperPoder2 = (float)populacao2 + area2 + pib2 + (float)pontos_turisticos2 + PIB_per_capita2+ (1.0f / densidade_populacional2);
+    
     
     
 
